@@ -100,3 +100,4 @@ print(pub.name)
 warandpeace = Book("Твердый переплет", "Твердая обложка", ["Лев Николаевич Толстой"], ["Русский вестник"], 1865)
 warandpeace.addauthor("тоже Лев Николаевич Толстой")
 print(warandpeace.authors)
+#
