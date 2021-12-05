@@ -27,12 +27,18 @@ class Vector2D:
         return self.x, self.y
     def len(self):
         return ((self.x)**2 + (self.y)**2)**0.5
+    def scalarProduct(self, a):
+        return self.x * a.x + self.y * a.y
+    def cos(self, a):
+        return self.scalarProduct(a) / (self.len() * a.len())
+    def equals(self, a):
+        if self.len() > a.len():
+            print('k>a')
+        if self.len() == a.len():
+            print('k=a')
+        if self.len() < a.len():
+            print('k<a')
 
-
-
-
-
-k = Vector2D(3,5)
-a = Vector2D(3,1)
-print(k.str())
-print(k.len())
+k = Vector2D(3,1)
+a = Vector2D(2,4)
+print(k.cos(a))
